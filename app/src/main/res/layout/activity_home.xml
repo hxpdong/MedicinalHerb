@@ -20,14 +20,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="40px"
-            android:text="Tìm kiếm bằng từ khóa hoặc hình ảnh"
-            android:layout_margin="10dp"
-            />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -54,7 +46,14 @@
                     android:onClick="openImgDialog"
                     android:background="@drawable/icondetect" />
             </LinearLayout>
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="40px"
+                android:text="Ứng dụng tìm kiếm và tra cứu cây thuốc nam"
+                android:layout_margin="10dp"
+                />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
