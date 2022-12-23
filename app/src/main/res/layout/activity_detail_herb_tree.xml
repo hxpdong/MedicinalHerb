@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp"
+    tools:context=".DetailHerbTree"
+    android:background="@color/green_light">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:paddingBottom="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp">
+                    <ImageView
+                        android:id="@+id/myimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop">
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/detail_info_tenCay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center_vertical|start"
+                        android:text="Bạc Hà"
+                        android:textAllCaps="true"
+                        android:textSize="25sp"
+                        android:textColor="@color/white"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="20"
+                        android:textStyle="bold"
+                        android:layout_gravity="bottom|left">
+                    </TextView>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/category_tenGoiKhac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Tên gọi khác:"
+                    android:textStyle="bold|italic"></TextView>
+
+                <TextView
+                    android:id="@+id/detail_info_tenGoiKhac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Bạc hà nam, nạt nặm, chạ phiéc hom (Tày)"
+                    android:textStyle="normal"></TextView>
+
+                <TextView
+                    android:id="@+id/category_tenKhoaHoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Tên khoa học:"
+                    android:textStyle="bold|italic"></TextView>
+
+                <TextView
+                    android:id="@+id/detail_info_tenKhoaHoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Mentha arvensis L."
+                    android:textStyle="normal"></TextView>
+
+                <TextView
+                    android:id="@+id/category_tenHo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Tên họ:"
+                    android:textStyle="bold|italic"></TextView>
+
+                <TextView
+                    android:id="@+id/detail_info_tenHo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Bạc hà (Lamiaceae)"
+                    android:textStyle="normal"></TextView>
+
+                <TextView
+                    android:id="@+id/category_boPhanDung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Bộ phận dùng:"
+                    android:textStyle="bold|italic"></TextView>
+
+                <TextView
+                    android:id="@+id/detail_info_boPhanDung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Bộ phận trên mặt đất"
+                    android:textStyle="normal"></TextView>
+
+                <TextView
+                    android:id="@+id/category_chuTri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Công năng, chủ trị:"
+                    android:textStyle="bold|italic"></TextView>
+
+                <TextView
+                    android:id="@+id/detail_info_chuTri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Sơ phong, thanh nhiệt, thấu chẩn, sơ can, giải uất, giải độc. Chữa cảm mạo phong nhiệt,cảm cúm, ngạt mũi, nhức đầu, đau mắt đỏ, thúc đẩy sởi mọc, ngực sườn đầy tức."
+                    android:textStyle="normal"></TextView>
+
+                <TextView
+                    android:id="@+id/category_lieuDung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Liều dùng:"
+                    android:textStyle="bold|italic"></TextView>
+
+                <TextView
+                    android:id="@+id/detail_info_lieuDung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Ngày dùng 12 - 20g, hãm vào nước sôi 200 ml, cách 3 giờ uống một lần."
+                    android:textStyle="normal"></TextView>
+
+                <TextView
+                    android:id="@+id/category_luuY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Lưu ý:"
+                    android:textColor="#FF0000"
+                    android:textStyle="bold|italic"></TextView>
+
+                <TextView
+                    android:id="@+id/detail_info_luuY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Không có"
+                    android:textStyle="normal"></TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtMoRongDetail"
+                android:text="Tìm kiếm mở rộng"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+            <LinearLayout
+                android:id="@+id/lnCayCungHo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:onClick="onClickCungHo"
+                tools:ignore="OnClick" >
+                <ImageView
+                    android:id="@+id/expandHo"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/teal_700"
+                    app:srcCompat="@drawable/ic_baseline_expand_more_24" />
+                <TextView
+                    android:id="@+id/txtCayCungHo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:padding="10dp"
+                    android:background="@color/teal_700"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="17dp" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_cungho"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/txtNotFoundCungHo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:text="Không tìm thấy trong cơ sở dữ liệu"
+                android:gravity="center"
+                android:textSize="17dp" />
+
+
+            <LinearLayout
+                android:id="@+id/lnCayCungNhom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:onClick="onClickCungNhom"
+                tools:ignore="OnClick">
+                <ImageView
+                    android:id="@+id/expandNhom"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/teal_700"
+                    app:srcCompat="@drawable/ic_baseline_expand_more_24" />
+                <TextView
+                    android:id="@+id/txtCayCungNhom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:padding="10dp"
+                    android:background="@color/teal_700"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="17dp" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_cungnhom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/txtNotFoundCungNhom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:text="Không tìm thấy trong cơ sở dữ liệu"
+                android:gravity="center"
+                android:textSize="17dp" />
+            <TextView
+                android:id="@+id/blank"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

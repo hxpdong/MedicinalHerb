@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+    <com.ortiz.touchview.TouchImageView
+        android:id="@+id/imgdialg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/xichdongnam"/>
+    <TextView
+        android:id="@+id/btnCloseImgdialg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="2dp"
+        android:gravity="center"
+        android:background="@drawable/custombordercircle"
+        android:text="X"
+        android:textColor="@color/white"
+        android:textSize="25dp"/>
+</LinearLayout>

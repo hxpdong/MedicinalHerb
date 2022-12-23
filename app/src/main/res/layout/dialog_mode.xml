@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/customborder"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:id="@+id/radio_group_mode">
+        <RadioButton android:id="@+id/radio_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhận diện Hình ảnh"
+            android:onClick="onRadioButtonClicked"
+             />
+        <RadioButton android:id="@+id/radio_real"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhận diện Realtime"
+            android:onClick="onRadioButtonClicked"
+            />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/btnCloseImgdialg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="2dp"
+        android:gravity="center"
+        android:background="@drawable/custombordercircle"
+        android:text="X"
+        android:textColor="@color/white"
+        android:textSize="25dp"/>
+</LinearLayout>

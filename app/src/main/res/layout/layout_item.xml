@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp"
+    android:layout_margin="4dp" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:background="@drawable/customborder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tencay"
+            android:gravity="center_vertical|start"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:text="Bạc Hà"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:id="@+id/tengoikhac"
+                android:gravity="center_vertical|start"
+                android:textStyle="italic"
+                android:text="Bạc hà nam, nạt nặm, chạ phiéc hom (Tày)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+        </LinearLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iconcay"
+            android:src="@drawable/iconlacayv4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
